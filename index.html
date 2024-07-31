@@ -2547,6 +2547,25 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKP9B282" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
+
+	<!--? On Leave Show Page  -->
+	<div class="OnLeaveCard">
+		<div class="Card">
+			<div class="heading">
+				Best English Speaking Institute
+			</div>
+			<div class="input">
+				<input type="text" type="number">
+				<button>CALL ME BACK</button>
+			</div>
+			<div class="no_thanks_btn">
+				<button><a href="/">No Thanks</a></button>
+			</div>
+		</div>
+	</div>
+
+
 	<header id="header" class="fixed-top">
 
 		<div class="container d-flex align-items-center justify-content-between mt-3">
@@ -2560,8 +2579,8 @@
 					<li class="hide"><a class="nav-link scrollto menu-btn" href="#people">Reviews</a></li>
 					<li class="hide"><a class="nav-link scrollto menu-btn" href="#accordionExample">FAQs</a></li>
 					<!-- <li><a class="nav-link scrollto" href="https://yogachallenge.in/intense/">Advanced workshops</a></li> -->
-					<li class="whats" id="whatsappButton"><a class="nav-link scrollto register-now" href="https://api.whatsapp.com/send/? phone=919311351011 &text=Hello,%20I%20am%20looking%20to%20improve%20my%20English.%20Can%20you%20check%20my%20level%20and%20suggest%2
-						0the%20best%20batch%C2%A0for%C2%A0me?%20Thanks">
+					<li class="whats" id="whatsappButton"><a class="nav-link scrollto register-now"
+							href="https://api.whatsapp.com/send/?phone=919319629093&text=Hello,%20I%20am%20looking%20to%20improve%20my%20English.%20Can%20you%20check%20my%20level%20and%20suggest%20the%20best%20batch%C2%A0for%C2%A0me?%20Thanks">
 							WhatsApp Us</a>
 					</li>
 				</ul>
@@ -4969,11 +4988,16 @@
 	</footer>
 
 
+	<!--? FixeD Whatsapp Icon  -->
 	<div class="Fixed_WhatsApp_Icon">
-		<a href="">
+		<a
+			href="https://api.whatsapp.com/send/?phone=919319629093&text=Hello,%20I%20am%20looking%20to%20improve%20my%20English.%20Can%20you%20check%20my%20level%20and%20suggest%20the%20best%20batch%C2%A0for%C2%A0me?%20Thanks">
 			<img src="./resources/img/whatsapp.webp" alt="whatsapp Us">
 		</a>
 	</div>
+
+
+
 
 	<!-- <style>
 		@media (max-whidth:768px) {
@@ -5340,11 +5364,11 @@
 	</script>
 
 	<script>
-		 document.addEventListener('mouseleave', function(event) {
-            if (event.clientY <= 0) {
-                alert("You are leaving the webpage!");
-            }
-        });
+		document.addEventListener('mouseleave', function (event) {
+			if (event.clientY <= 0) {
+				document.querySelector('.OnLeaveCard').style.display="flex"
+			}
+		});
 	</script>
 </body>
 

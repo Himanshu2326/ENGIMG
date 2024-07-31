@@ -1,14 +1,56 @@
-
-.Fixed_WhatsApp_Icon{
+/*
+=========================
+*/
+.Fixed_WhatsApp_Icon {
 	position: fixed;
-    left: 28px;
-    bottom: 58px;
+	right: 28px;
+	bottom: 58px;
+	z-index: 10;
 }
 
 
-.Fixed_WhatsApp_Icon img{
-    height: 50px;
+.Fixed_WhatsApp_Icon img {
+	height: 50px;
 }
+
+
+.OnLeaveCard {
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	bottom: 50%;
+	flex-direction: column;
+	gap: 1rem;
+	display: none;
+}
+
+.OnLeaveCard .Card {
+	background: #fff;
+	padding: 2rem 9rem;
+}
+
+.OnLeaveCard .Card .input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+
+
+.OnLeaveCard .Card .no_thanks_btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/*
+=========================
+*/
 
 
 .navbar a,
@@ -49,6 +91,7 @@
 
 		width: 220px;
 	}
+
 }
 
 #banner-videos {
@@ -422,6 +465,7 @@ div#success_msg {
 	.mob_code {
 		font-size: 12px;
 	}
+
 }
 
 #gift_form .btn-get-started,
@@ -1059,15 +1103,15 @@ select.custom-select option {
 	}
 
 	.white_block {
-        padding: 8px;
-    }
+		padding: 8px;
+	}
 
 	#faq img {
-        margin-bottom: 15px;
-        max-width: 20rem;
-    }
+		margin-bottom: 15px;
+		max-width: 20rem;
+	}
 
-	#footer .container{
+	#footer .container {
 		justify-content: center;
 	}
 }
@@ -1075,8 +1119,8 @@ select.custom-select option {
 
 
 @media (max-width:400px) {
-    #footer {
-        padding: 10px 0 100px !important;
-    }
+	#footer {
+		padding: 10px 0 100px !important;
+	}
 
 }
