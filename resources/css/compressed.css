@@ -10672,7 +10672,7 @@ a:hover {
 .right_block .date-and-time img {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 .right_register {
   font-weight: 700;
@@ -11140,6 +11140,10 @@ section {
     font-size: 14px;
     display: block;
     margin-bottom: 10px;
+    display: flex; 
+    align-items: center;
+     justify-content: flex-start;
+      gap: 1px;
   }
   .register_mobile_details .date-and-time img {
     width: 20px;

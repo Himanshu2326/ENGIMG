@@ -2594,16 +2594,15 @@
 			}
 
 			.mbl-header a {
-				height: 30px;
+				height: 40px;
 				width: 150px;
 				padding-bottom: 31px;
-				margin-right: 5px;
+				margin-right: 8px;
 				padding: 5px 5px;
 				border-radius: 50px;
-				font-size: 17px;
+				font-size: 18px;
 				font-family: Nunito;
-
-
+				padding: 0px 25px !important;
 			}
 
 			.mobile-link {
@@ -4366,7 +4365,7 @@
 																	By enrolling in our courses, you agree to abide by
 																	these terms. For any queries, please contact us at
 																	<a
-																		href="mailto:info@engmates.com">info@engmates.com.</a>
+																		href="mailto:info@engmates.com">info@engmates.com</a>
 																</div>
 																<div class="modal-footer">
 																	<button type="button" class="btn"
@@ -4549,7 +4548,7 @@
 			background-color: #F2eFea;
 			display: flex;
 			margin-top: 0px;
-			justify-content: center;
+			justify-content: space-evenly;
 			gap: 40px;
 		}
 
@@ -4579,6 +4578,7 @@
 			text-align: justify;
 			margin-left: 0px;
 			margin-top: 10px;
+			text-align: center;
 		}
 
 		.left-area .image img {
@@ -4750,6 +4750,7 @@
 
 			.right-area form button {
 				width: 60%;
+				margin-bottom: 20px;
 			}
 		}
 
@@ -4839,7 +4840,7 @@
 					<i class="fa-solid fa-location-dot"></i>
 					<li style="margin-left: 6px;">
 						<h5>Address</h5>
-						<p>No.30/3A, 3rd Floor, Metro Station Gate, Gali No. 3, opp. Tilak Nagar, New Delhi</p>
+						<p>No.30/3A, 3rd Floor, Metro Station Gate, Gali No. 3, opp. Tilak Nagar</p>
 					</li>
 				</div>
 
@@ -4855,7 +4856,7 @@
 					<i class="fa-solid fa-envelope"></i>
 					<li>
 						<h5>Email</h5>
-						<a href="mailto:info@engmates.com" class="phone_call">info@engmates.com.</a>
+						<a href="mailto:info@engmates.com" class="phone_call">info@engmates.com</a>
 					</li>
 				</div>
 			</div>
@@ -5314,7 +5315,7 @@
 			document.getElementById('terms').checked = false;
 		});
 
-		
+
 		document.getElementById('submitBtn').addEventListener('click', function (event) {
 			var termsCheckbox = document.getElementById('terms');
 			if (!termsCheckbox.checked) {

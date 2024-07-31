@@ -179,7 +179,6 @@ img.thumbnails {
 @media (max-width: 991px) {
 	.register_mobile {
 		background: #FAF9F6;
-
 	}
 }
 
@@ -276,9 +275,10 @@ div#more-data {
 	.register_mobile h3 {
 		font-size: 15px !important;
 	}
+
 	.mbl-header a {
-        width: fit-content !important;
-        padding: 15px 15px !important;
+		width: fit-content !important;
+		padding: 15px 15px !important;
 	}
 }
 
@@ -533,19 +533,20 @@ div#thumb_0 {
 	}
 
 	.curr_right {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-    }
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+	}
 }
 
 @media (max-width: 351px) {
 	div#thumb_0 {
 		height: 320px !important;
 	}
-    #footer {
-        padding: 20px 0 100px !important;
-    }
+
+	#footer {
+		padding: 20px 0 100px !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -1039,24 +1040,14 @@ select.custom-select option {
 	.sticky-button {
 		bottom: 110px;
 	}
-/* 
-	.heading_cur3 {
-		font-size: 13px !important;
-	}
 
-	.heading_cur3 {
-		font-size: 12px !important;
-	} */
+	.people_joined {
+		margin-top: 15px;
+	}
 }
 
 
 
 @media (max-width:400px) {
-	/* .curr_left, .curr_right {
-        padding: 10px !important;
-    } */
 
-	/* .heading_cur3 {
-        font-size: 16px !important;
-    } */
 }
