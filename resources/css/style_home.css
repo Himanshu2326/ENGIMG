@@ -1045,18 +1045,18 @@ select.custom-select option {
 	}
 
 	.heading_cur3 {
-		font-size: 11px !important;
+		font-size: 12px !important;
 	}
 }
 
 
 
 @media (max-width:400px) {
-	.heading_cur3 {
-        font-size: 10px !important;
-    }
-
 	.curr_left, .curr_right {
         padding: 10px !important;
+    }
+
+	.heading_cur3 {
+        font-size: 13px !important;
     }
 }
