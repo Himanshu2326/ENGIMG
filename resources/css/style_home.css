@@ -1039,14 +1039,14 @@ select.custom-select option {
 	.sticky-button {
 		bottom: 110px;
 	}
-
+/* 
 	.heading_cur3 {
 		font-size: 13px !important;
 	}
 
 	.heading_cur3 {
 		font-size: 12px !important;
-	}
+	} */
 }
 
 
@@ -1056,7 +1056,7 @@ select.custom-select option {
         padding: 10px !important;
     }
 
-	.heading_cur3 {
+	/* .heading_cur3 {
         font-size: 16px !important;
-    }
+    } */
 }
