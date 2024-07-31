@@ -1,3 +1,16 @@
+
+.Fixed_WhatsApp_Icon{
+	position: fixed;
+    left: 28px;
+    bottom: 58px;
+}
+
+
+.Fixed_WhatsApp_Icon img{
+    height: 50px;
+}
+
+
 .navbar a,
 .navbar a:focus {
 	font-family: Nunito;
@@ -1044,10 +1057,26 @@ select.custom-select option {
 	.people_joined {
 		margin-top: 15px;
 	}
+
+	.white_block {
+        padding: 8px;
+    }
+
+	#faq img {
+        margin-bottom: 15px;
+        max-width: 20rem;
+    }
+
+	#footer .container{
+		justify-content: center;
+	}
 }
 
 
 
 @media (max-width:400px) {
+    #footer {
+        padding: 10px 0 100px !important;
+    }
 
 }

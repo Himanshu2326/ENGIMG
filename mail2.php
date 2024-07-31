@@ -174,3 +174,24 @@ h1{
 </script>
 
 </html>
+
+
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $phone_number = htmlspecialchars($_POST['mbl_no']);
+
+    // Email details
+    $to = "hp0682854@gmail.com"; // Replace with your company Gmail address
+    $subject = "Request Call Back";
+    $message = "You have received a request for a call back. The phone number is: " . $phone_number;
+    $headers = "From: no-reply@yourdomain.com"; // Replace with your domain
+
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Your request has been sent successfully.";
+    } else {
+        echo "There was an error sending your request.";
+    }
+}
+?>

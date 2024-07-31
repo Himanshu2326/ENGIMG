@@ -10215,8 +10215,8 @@ a:hover {
 .people_joined {
   color: #666465;
   font-size: 14px;
-  margin-top: 8px;
-  margin-left: 20px;
+  margin-top: 15px;
+  margin-left: 2px;
 }
 .people_joined span {
   color: #636366;
@@ -11146,8 +11146,8 @@ section {
       gap: 1px;
   }
   .register_mobile_details .date-and-time img {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     margin-right: 10px;
   }
   #footer .footer_link {

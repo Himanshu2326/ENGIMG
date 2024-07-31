@@ -2129,6 +2129,10 @@
 			.heading_cur1 {
 				font-size: 18px;
 			}
+
+			#footer {
+				padding: 20px 0 100px !important;
+			}
 		}
 
 		@media (max-width:411px) {
@@ -2537,6 +2541,8 @@
 </head>
 
 <body class="fb" onload="Shoow()">
+
+
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKP9B282" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
@@ -4215,16 +4221,16 @@
 						<div id="register_form" class="register_form text-center ">
 							<h3 class="register_tag">Get Consulted Today</h3>
 							<div class="register_tag_msg">Start your journey to a<span style="color:#F4C129">
-									successful</span> &amp; <span style="color:#F4C129">confident</span> life</div>
+									successful</span><br> &amp; <span style="color:#F4C129">confident</span> life</div>
 							<div class="register_mobile_details">
-								<span class="date-and-time"><img loading="lazy" src="resources/img/date-white.png"
+								<span class="date-and-time"><img loading="lazy" src="resources/img/calender.svg"
 										alt="Date" width="100" height="100">
 									3 Months </span>
-								<span class="date-and-time"><img loading="lazy" src="resources/img/time-white.png"
-										alt="Date" width="100" height="100">
+								<span class="date-and-time"><img loading="lazy" src="resources/img/clock.svg" alt="Date"
+										width="100" height="100">
 									1.5 Hrs / 5 Days
 								</span>
-								<span class="date-and-time"><img loading="lazy" src="resources/img/rupee-white.png"
+								<span class="date-and-time"><img loading="lazy" src="resources/img/rupees.svg"
 										alt="Date" width="100" height="100">Free Consultation
 									Available!<!--  + GST --></span>
 							</div>
@@ -4259,7 +4265,8 @@
 
 											<div class="d-block w-100">
 												<input type="text" class="form-control phone" placeholder="Number*"
-													name="phone" required="" id="phone*" value="" required>
+													name="phone" required="" id="phone*" value="" required
+													pattern="[6-9][0-9]{9}" minlength="10" maxlength="10">
 											</div>
 											<div id="mob_error"></div>
 										</div>
@@ -4578,7 +4585,6 @@
 			text-align: justify;
 			margin-left: 0px;
 			margin-top: 10px;
-			text-align: center;
 		}
 
 		.left-area .image img {
@@ -4789,6 +4795,7 @@
 		@media (max-width:768px) {
 			.left-area p {
 				width: 90%;
+				text-align: center;
 			}
 
 			.right-area .input,
@@ -4867,7 +4874,6 @@
 				<input name="mbl_no" type="text" placeholder="Enter Your Phone Number" required class="input">
 				<button name="submit_new" type="submit">CALL BACK</button>
 			</form>
-
 		</div>
 	</div>
 
@@ -4961,6 +4967,13 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<div class="Fixed_WhatsApp_Icon">
+		<a href="">
+			<img src="./resources/img/whatsapp.webp" alt="whatsapp Us">
+		</a>
+	</div>
 
 	<!-- <style>
 		@media (max-whidth:768px) {
@@ -5324,6 +5337,14 @@
 			}
 		});
 
+	</script>
+
+	<script>
+		 document.addEventListener('mouseleave', function(event) {
+            if (event.clientY <= 0) {
+                alert("You are leaving the webpage!");
+            }
+        });
 	</script>
 </body>
 
