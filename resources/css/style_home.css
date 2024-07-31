@@ -1052,9 +1052,9 @@ select.custom-select option {
 
 
 @media (max-width:400px) {
-	.curr_left, .curr_right {
+	/* .curr_left, .curr_right {
         padding: 10px !important;
-    }
+    } */
 
 	/* .heading_cur3 {
         font-size: 16px !important;
