@@ -4972,7 +4972,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="exampleModalLabel">Privacy & Policy</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<button type="button" class="close privacy_close_icon" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
@@ -5030,7 +5030,7 @@
 							By using our services, you agree to the terms of this Privacy Policy.
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal"
+							<button type="button" class="btn btn-secondary privacy_close_btn"  data-dismiss="modal"
 								style="background-color: red;">Close
 							</button>
 						</div>
@@ -5407,23 +5407,28 @@
 
 
 
-		// document.getElementById('chkbx').addEventListener('click', function (event) {
-		// 	document.body.style.overflow = "hidden";
-		// });
+		document.getElementById('chkbx').addEventListener('click', function (event) {
+			document.body.style.overflow = "hidden";
+		});
 
-		// document.querySelector('.Privacy_btn').addEventListener('click', function (event) {
-		// 	document.body.style.overflow = "hidden";
-		// });
+		document.querySelector('.Privacy_btn').addEventListener('click', function (event) {
+			document.body.style.overflow = "hidden";
+		});
 
-		// function scrollBody() {
-		// 	document.body.style.overflow = "auto";
-		// }
+		const scrollBody = () => {
+			document.body.style.overflow = "auto";
+		}
 
-		// let close_btn = document.querySelector('.close_btn');
-		// let close_icon_btn = document.querySelector('.close_icon_btn');
-
-		// close_btn.addEventListener('click', scrollBody())
-		// close_icon_btn.addEventListener('click', scrollBody())
+		//? Close Buttons :-- 
+		let close_btn = document.querySelector('.close_btn');
+		let close_icon_btn = document.querySelector('.close_icon_btn');
+		let privacy_icon_btn = document.querySelector('.privacy_close_icon');
+		let privacy_btn = document.querySelector('.privacy_close_btn');
+		
+		close_btn.addEventListener('click', scrollBody)
+		close_icon_btn.addEventListener('click', scrollBody)
+		privacy_icon_btn.addEventListener('click', scrollBody)
+		privacy_btn.addEventListener('click', scrollBody)
 
 
 
