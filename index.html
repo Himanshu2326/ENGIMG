@@ -266,6 +266,10 @@
 				justify-content: center;
 			}
 
+			#header {
+				margin-top: 1rem !important;
+			}
+
 		}
 
 		@media (min-width:576px) {
@@ -753,6 +757,14 @@
 				display: none;
 			}
 
+			.register_mobile {
+				display: block;
+			}
+
+			#text {
+				margin-bottom: 10px;
+			}
+
 		}
 
 		#hero {
@@ -859,10 +871,16 @@
 		.white_block {
 			background: #fff;
 			padding: 30px;
-			margin-top: 30px;
 			margin-bottom: 30px;
 			border-radius: 10px;
 			box-shadow: 0 0 8px #f2f2f2;
+			margin-top: 30px;
+		}
+
+		#benefits,
+		#people {
+			margin-top: 0px;
+
 		}
 
 		.white_block_no_padding {
@@ -959,7 +977,7 @@
 		.include_details h4 {
 			color: #586a92;
 			font-size: 22px;
-			padding-top: 20px;
+			/* padding-top: 20px; */
 		}
 
 		.include_text {
@@ -972,7 +990,10 @@
 			box-shadow: 5px 10px 10px rgba(245, 245, 245, .9);
 			font-family: Nunito;
 			margin-bottom: 25px;
+			padding: 10px 0;
 			border-radius: 10px;
+			display: flex;
+			align-items: center;
 		}
 
 		.include_details::after {
@@ -1488,6 +1509,9 @@
 			font-size: 11px;
 			display: block;
 			margin-bottom: 7px;
+			font-size: 13.4px;
+			display: flex;
+			align-items: center;
 		}
 
 		.right_block .gray {
@@ -1498,6 +1522,10 @@
 			width: 20px;
 			height: 20px;
 			margin-right: 5px;
+		}
+
+		.right_block .date-and-time img:nth-child(1) {
+			margin-bottom: 2px;
 		}
 
 		.right_register {
@@ -1600,6 +1628,12 @@
 			.row_laptop {
 				display: none;
 			}
+
+			#include_details_text {
+				flex-direction: column;
+			}
+
+
 		}
 
 
@@ -2042,6 +2076,10 @@
 		@media (max-width:575px) {
 			.curr_left::after {
 				margin: -76px 0 0 102px;
+			}
+
+			#text {
+				margin-bottom: 0px;
 			}
 
 			.curr_left,
@@ -2557,10 +2595,10 @@
 			</div>
 			<div class="input">
 				<input type="text" type="number">
-				<button>CALL ME BACK</button>
+				<button class="Call_MeBtn">CALL ME BACK</button>
 			</div>
 			<div class="no_thanks_btn">
-				<button><a href="/">No Thanks</a></button>
+				<button class="No_ThanksBtn"><a href="/">No Thanks</a></button>
 			</div>
 		</div>
 	</div>
@@ -2568,7 +2606,7 @@
 
 	<header id="header" class="fixed-top">
 
-		<div class="container d-flex align-items-center justify-content-between mt-3">
+		<div class="container d-flex align-items-center justify-content-between">
 			<!--<a href="index.html" class="logo"><img loading="lazy" src="img/logo.png" alt="Logo" class="img-fluid"></a>-->
 			<h1 class="logo"><a href="#"><img loading="lazy" src="./engimg/Asset 3@4x.png" alt="Logo" width="150px"
 						height="55px"></a></h1>
@@ -2651,6 +2689,10 @@
 
 			.logo {
 				display: none;
+			}
+
+			.people_joined {
+				margin-left: 35px;
 			}
 		}
 
@@ -2771,9 +2813,9 @@
 					</div>
 
 					<!-- <h2 id="workshop_date"> to </h2> -->
-					<div class="people_joined"><span>
-							1,00,000+
-						</span>students enrolled till date</div>
+					<div class="people_joined">
+						<span>1,00,000+ </span> students enrolled till date
+					</div>
 
 					<div class="countdown_desktop">
 						<div class="counter_block" id="clock_container">
@@ -2998,6 +3040,12 @@
 				max-width: 100%;
 				height: 100%;
 			}
+
+			.people_joined {
+				justify-content: center;
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
 
 
@@ -3035,7 +3083,7 @@
 									height="50px">
 								<div class="stdate"> Batches<br>Start </div>
 								<div class="fulldate" id="workshop_date">
-									Every Monday of<br>the week
+									Every Monday <br>of the week
 								</div>
 							</div>
 
@@ -3080,7 +3128,8 @@
 						<div class="white_block white_block_transparent">
 							<h3 class="brown_heading">Why Choose Us?</h3>
 							<div class="include_details">
-								<div>
+
+								<div id="include_details_text">
 
 									<img srcset="engimg/Engmates New Images - changed ones/training-according-to-students-understanding-level.png"
 										sizes="(max-width: 600px) 480px, 800px"
@@ -3090,13 +3139,13 @@
 										<div class="include_text">
 											Our courses are customized to match each student's learning pace, ensuring
 											effective understanding and progress in English speaking skills.
-
 										</div>
 									</div>
+
 								</div>
 							</div>
 							<div class="include_details">
-								<div>
+								<div id="include_details_text">
 
 									<img srcset="./engimg/well-planned-study-material-for-students.png"
 										sizes="(max-width: 600px) 480px, 800px"
@@ -3112,7 +3161,7 @@
 								</div>
 							</div>
 							<div class="include_details">
-								<div>
+								<div id="include_details_text">
 
 									<img srcset="./engimg/regular-performance-monitoring-tests.png"
 										sizes="(max-width: 600px) 480px, 800px"
@@ -3128,7 +3177,7 @@
 								</div>
 							</div>
 							<div class="include_details">
-								<div>
+								<div id="include_details_text">
 
 									<img srcset="engimg/Engmates New Images - changed ones/result-oriented-proven-practices.png"
 										sizes="(max-width: 600px) 480px, 800px"
@@ -3674,7 +3723,7 @@
 
 						<div id="people" class="white_block people">
 							<h3 class="brown_heading text-center">Students’ Success Stories</h3>
-							<div class="row">
+							<div class="row" id="Students_Stories">
 
 								<div
 									class="row d-flex justify-content-center text-center justify-content-sm-center    align-items-center">
@@ -4297,10 +4346,11 @@
 										</div>
 									</div>
 									<div class="row ">
-										<div class="col-sm-12 col-lg-6 mb-4 mb-sm-3 mb-md-3 w-100 d-flex"
+										<div class="col-sm-12 col-lg-6 mb-4 mb-sm-0 mb-md-3 w-100 d-flex"
 											id="time_slot_div">
-											<input type="text" class="form-control" placeholder="Your Message"
-												name="message" required="" id="text" value="">
+											<input type="text" class="form-control"
+												placeholder="Let us know the problem you're facing" name="message"
+												required="" id="text" value="">
 											<!-- <div id="time_slot_error"></div> -->
 										</div>
 									</div>
@@ -4317,8 +4367,9 @@
 												</label>
 												<div id="aware_recorded_error" class="text-left text-danger"></div>
 											</div>
-											<div class="form-check radio-container checkbox-space">
-												<input class="form-check-input" type="checkbox" value="" id="terms">
+											<div class="form-check radio-container checkbox-space ">
+												<input class="form-check-input checkbox_Text" type="checkbox" value=""
+													id="terms">
 												<label class="form-check-label ps-0 pb-0 mt-0" for="terms">
 													I agree and accept the <a href="https://engmates.com/"
 														style="color:#F4C129"></a>
@@ -4326,7 +4377,7 @@
 
 													<!-- Button trigger modal -->
 													<span id="chkbx" class="Conditions"
-														style="color: #c77201; font-weight: 900; cursor: pointer;"
+														style="color: #F4C129; font-weight: 900; cursor: pointer;"
 														data-toggle="modal" data-target="#exampleModalLong">
 														Terms And Conditions
 													</span>
@@ -4341,7 +4392,7 @@
 																<div class="modal-header">
 																	<h5 class="modal-title" id="exampleModalLongTitle">
 																		Terms And Conditions</h5>
-																	<button type="button" class="close"
+																	<button type="button" class="close close_icon_btn"
 																		data-dismiss="modal" aria-label="Close">
 																		<span aria-hidden="true">&times;</span>
 																	</button>
@@ -4394,7 +4445,7 @@
 																		href="mailto:info@engmates.com">info@engmates.com</a>
 																</div>
 																<div class="modal-footer">
-																	<button type="button" class="btn"
+																	<button type="button" class="btn close_btn"
 																		style="background: tomato;"
 																		data-dismiss="modal">Close</button>
 																</div>
@@ -4489,14 +4540,14 @@
 				<div class="right_block register_desktop" id="stickyDiv">
 					<h3>English Speaking Course</h3>
 
-					<span class="date-and-time"><img loading="lazy" src="resources/img/date.png" alt="Date" width="100"
-							height="100">3 Months</span>
-					<span class="date-and-time d-flex"><img loading="lazy" src="resources/img/time-blue.png" alt="Date"
-							width="100" height="100">
+					<span class="date-and-time"><img loading="lazy" src="resources/img/Fixed_Calender.svg" alt="Date"
+							width="100" height="100">3 Months</span>
+					<span class="date-and-time d-flex"><img loading="lazy" src="resources/img/Fixed_Clock.svg"
+							alt="Date" width="100" height="100">
 						1.5 Hrs / 5 Days
 					</span>
-					<span class="date-and-time"><img loading="lazy" src="resources/img/rupee.png" alt="Date" width="100"
-							height="100">Free Consultation Available!<!--  + GST --></span>
+					<span class="date-and-time"><img loading="lazy" src="resources/img/Fixed_Rupee.svg" alt="Date"
+							width="100" height="100">Free Consultation Available!<!--  + GST --></span>
 					<a href="#register_form"
 						class="btn-get-started scrollto right_register register-now-track-btn">Register Today</a>
 					<span class="date-and-time gray"><img loading="lazy" src="resources/img/tick.png" alt="Date"
@@ -4519,7 +4570,7 @@
 					<div class="register_mobile_detail">
 
 						<span class="date-and-time"><img loading="lazy" src="resources/img/rupee.png" alt="Rupee">Free
-							Consultation Available!<!-- + GST --></span>
+							Consultation Available!<!-- + GST --> </span>
 						<span class="date-and-time"><img loading="lazy" src="resources/img/group.png" alt="Group"
 								width="100" height="100"><span><strong>1,00,000+ </strong> lives
 								impacted</span></span>
@@ -4823,6 +4874,7 @@
 			}
 		}
 
+
 		@media (min-width: 768px) and (max-width: 888px) {
 			.content_area {
 				padding: 0px 10px 0px 10px;
@@ -4835,7 +4887,7 @@
 			<div class="image">
 				<img src="./engimg/Asset 3@4x.png" alt="Engmates Logo">
 			</div>
-			<p>We have 20+ years of experience providing unique teaching methods and live activity-based learning.</p>
+			<p>We have 20+ years of experience providing unique teaching methods and live activity based learning.</p>
 			<!-- <div class="social-icons">
                     <a href="https://www.facebook.com" target="_blank">
                       <div class="f-img">
@@ -4888,7 +4940,7 @@
 			</div>
 		</div>
 		<div class="right-area">
-			<h4 hrf="./">Request Call Back</h4>
+			<h4 hrf="./">Request Free Call Back</h4>
 			<form action="mail2.php" method="post" class="form">
 				<input name="mbl_no" type="text" placeholder="Enter Your Phone Number" required class="input">
 				<button name="submit_new" type="submit">CALL BACK</button>
@@ -4908,7 +4960,8 @@
 		<div class="container d-flex align-items-center">
 			<a href="./engimg/Asset 3@4x00.png"></a>
 			<p class="copyright1 mt-4">©2024 - 2025 Engmates | <a href="./engimg/Asset 3@4x00.png"></a></p>
-			<button data-toggle="modal" class="border-0 text-primary mt-2 bg-white" data-target="#exampleModal">
+			<button data-toggle="modal" class="border-0 text-primary mt-2 bg-white Privacy_btn"
+				data-target="#exampleModal">
 				Privacy Policy
 			</button>
 
@@ -5353,6 +5406,28 @@
 		});
 
 
+
+		// document.getElementById('chkbx').addEventListener('click', function (event) {
+		// 	document.body.style.overflow = "hidden";
+		// });
+
+		// document.querySelector('.Privacy_btn').addEventListener('click', function (event) {
+		// 	document.body.style.overflow = "hidden";
+		// });
+
+		// function scrollBody() {
+		// 	document.body.style.overflow = "auto";
+		// }
+
+		// let close_btn = document.querySelector('.close_btn');
+		// let close_icon_btn = document.querySelector('.close_icon_btn');
+
+		// close_btn.addEventListener('click', scrollBody())
+		// close_icon_btn.addEventListener('click', scrollBody())
+
+
+
+		//-> CheckBox Validation :---  
 		document.getElementById('submitBtn').addEventListener('click', function (event) {
 			var termsCheckbox = document.getElementById('terms');
 			if (!termsCheckbox.checked) {
@@ -5363,12 +5438,32 @@
 
 	</script>
 
+
+	<!--? On Mouse Leave Function (SScript)  -->
 	<script>
+		let count = 0;
+
 		document.addEventListener('mouseleave', function (event) {
-			if (event.clientY <= 0) {
-				document.querySelector('.OnLeaveCard').style.display="flex"
+			if (event.clientY <= 0 && count == 0) {
+				document.querySelector('.OnLeaveCard').style.display = "flex"
 			}
+			return;
 		});
+
+
+		document.querySelector('.No_ThanksBtn').addEventListener('click', (e) => {
+			count = count + 1;
+			e.preventDefault();
+			document.querySelector('.OnLeaveCard').style.display = "none"
+		});
+
+		// document.querySelector('.Call_MeBtn').addEventListener('click', () => {
+		// 	count = count + 1
+		// })
+
+
+
+
 	</script>
 </body>
 

@@ -12463,7 +12463,7 @@ a:hover {
 .include_details h4 {
   color: #586a92;
   font-size: 20px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .include_text {
@@ -12673,7 +12673,10 @@ a:hover {
   color: #666465;
   font-size: 14px;
   margin-top: 15px;
-  margin-left: 2px;
+  margin-left: 19px;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: flex-start;
 }
 
 .people_joined span {
