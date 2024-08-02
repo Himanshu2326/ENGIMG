@@ -2605,8 +2605,7 @@
 			</div>
 			<div class="input">
 				<form action="" id="Call_Back_NO">
-					<input type="text" type="number" class="User_Number" required pattern="[6-9][0-9]{9}" minlength="10"
-						maxlength="10">
+					<input type="text" type="number" class="User_Number" required pattern="[6-9][0-9]{9}">
 					<button class="Call_MeBtn" type="submit">CALL ME BACK</button>
 				</form>
 			</div>
@@ -4346,8 +4345,8 @@
 
 											<div class="d-block w-100">
 												<input type="text" class="form-control phone User_Number"
-													placeholder="Number*" name="phone" required="" id="phone*" value=""
-													required pattern="[6-9][0-9]{9}" minlength="10" maxlength="10">
+													style="color: black;" placeholder="Number*" name="phone" required=""
+													id="phone*" value="" required pattern="[6-9][0-9]{9}">
 											</div>
 											<div id="mob_error"></div>
 										</div>
@@ -4953,8 +4952,8 @@
 		<div class="right-area">
 			<h4 hrf="./">Request Free Call Back</h4>
 			<form action="mail2.php" method="post" class="form">
-				<input name="mbl_no" type="text" pattern="[6-9][0-9]{9}" minlength="10" maxlength="10"
-					placeholder="Enter Your Phone Number" required class="input User_Number" required>
+				<input name="mbl_no" type="text" pattern="[6-9][0-9]{9}" placeholder="Enter Your Phone Number" required
+					class="input User_Number" required>
 				<button name="submit_new" type="submit">CALL BACK</button>
 			</form>
 		</div>
@@ -5615,17 +5614,17 @@
 
 
 		//? Number Validation :-- 
-
 		let User_Number = document.querySelectorAll('.User_Number');
 
-		User_Number.forEach((number_field, i) => {
-			console.log(number_field);
+		User_Number.forEach((number_field) => {
 			number_field.addEventListener('input', () => {
 				if (number_field.validity.patternMismatch) {
 					number_field.setCustomValidity('It seems the number is invalid, Your number must start with 9, 8, 7 or 6 and it must be 10 digits only.');
+				} else {
+					number_field.setCustomValidity('');
 				}
-			})
-		})
+			});
+		});
 
 
 
