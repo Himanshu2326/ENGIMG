@@ -26,31 +26,32 @@
 	background: #00000066;
 	gap: 1rem;
 	display: none;
-	z-index: 999;
+	z-index: 99999;
 	transition: .3s ease-in-out;
 }
 
 .OnLeaveCard .Card {
 	background: #f4f4f4;
 	border-radius: 4px;
-	box-shadow: 0px 0px 2px 0px #fffbc0;
 }
 
 
 .OnLeaveCard .Card .heading {
 	padding: 10px 10px;
-	background: linear-gradient(to right, #cc355d 0, #c81544 100%);
+	background: linear-gradient(to right, #fea837 0, #ff9200 100%);
 	color: white;
 	text-align: center;
 	font-size: 1.3rem;
+	font-weight: 600;
 	border-radius: 3px;
 }
 
 .OnLeaveCard .Card .input {
 	display: flex;
 	justify-content: center;
-	gap: 10px;
-	margin: 30px 55px;
+	gap: 18px;
+	margin: 30px 100px;
+
 }
 
 .OnLeaveCard .Card .input input {
@@ -72,7 +73,7 @@
 
 .OnLeaveCard .Card .input button {
 	border: none;
-	background: linear-gradient(to right, #bb0e3c 0, #d2063d 100%);
+	background: linear-gradient(to right, #fea837 0, #ff9200 100%);
 	color: white;
 	padding: 8px 12px;
 	border-radius: 3px;
@@ -90,7 +91,7 @@
 	text-decoration: underline;
 }
 
-#include_details_text{
+#include_details_text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,6 +99,37 @@
 
 .register_mobile {
 	display: none;
+}
+
+
+.privacy_close_btn,
+.close_btn {
+	background-color: #C77201 !important;
+	border: none;
+	color: #fff;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.privacy_close_icon,
+.close_icon_btn {
+	border: none;
+	font-size: 1.4rem;
+	padding: 0px 11px;
+	border-radius: 50%;
+	background: #C77201 !important;
+	color: white;
+	cursor: pointer;
+}
+
+.close_btn:hover {
+	/* background-color: #ff9306 !important;
+	border: none; */
+	color: #fff;
+}
+
+.copyright1 {
+	margin-top: 1.2rem !important;
 }
 
 /*
@@ -144,6 +176,9 @@
 		width: 220px;
 	}
 
+	.modal-content {
+		height: 92vh;
+	}
 }
 
 #banner-videos {
@@ -271,15 +306,13 @@ img.thumbnails {
 	font-weight: 600;
 }
 
-@media (max-width: 575px) {
-	.register_tag {
-		font-size: 24px;
-	}
-}
 
 @media (max-width: 768px) {
 	.register_tag {
 		font-size: 24px;
+	}
+	.modal-content {
+		height: 93vh;
 	}
 }
 
@@ -307,6 +340,17 @@ img.thumbnails {
 		width: 130px;
 	}
 }
+
+@media (max-width: 575px) {
+	.register_tag {
+		font-size: 24px;
+	}
+
+	.modal-content {
+		height: 98vh;
+	}
+}
+
 
 div#more-data {
 	display: contents;

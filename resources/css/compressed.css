@@ -6052,6 +6052,7 @@ fieldset:disabled .btn {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  height: 90vh;
 }
 
 .modal-backdrop {
@@ -6077,7 +6078,7 @@ fieldset:disabled .btn {
   flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
@@ -6098,8 +6099,10 @@ fieldset:disabled .btn {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: left;
+  overflow-y: auto;
+  margin-bottom: 5rem;
 }
 
 .modal-footer {
@@ -6108,10 +6111,14 @@ fieldset:disabled .btn {
   flex-shrink: 0;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 0.75rem 2rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  width: 100%;
 }
 
 .modal-footer>* {
@@ -13604,6 +13611,8 @@ a:hover {
     margin-right: -5px;
     margin-left: -5px;
   }
+
+
 
   #hero h1 {
     font-size: 45px;
