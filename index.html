@@ -1601,6 +1601,10 @@
 			.social_media a {
 				margin-right: 28px !important;
 			}
+
+			.terms_and_condtion {
+				max-width: 500px !important;
+			}
 		}
 
 		@media (max-width:1199px) {
@@ -2073,7 +2077,12 @@
 			}
 		}
 
-		@media (max-width:575px) {
+		@media (max-width:576px) {
+
+			.terms_and_condtion {
+				max-width: 100% !important;
+			}
+
 			.curr_left::after {
 				margin: -76px 0 0 102px;
 			}
@@ -4390,8 +4399,7 @@
 													<div class="modal fade" id="exampleModalLong" tabindex="-1"
 														role="dialog" aria-labelledby="exampleModalLongTitle"
 														aria-hidden="true">
-														<div class="modal-dialog" role="document"
-															style=" max-width: 40%;">
+														<div class="modal-dialog terms_and_condtion" role="document">
 															<div class="modal-content">
 																<div class="modal-header">
 																	<h5 class="modal-title" id="exampleModalLongTitle">
@@ -5406,9 +5414,9 @@
 			document.getElementById('terms').checked = false;
 		});
 
-		document.getElementById('chkbx').addEventListener('click', function (event) {
-			document.body.style.overflow = "hidden";
-		});
+		// document.getElementById('chkbx').addEventListener('click', function (event) {
+		// 	document.body.style.overflow = "hidden";
+		// });
 
 		// var isPrivacyDivOpen = false;
 
@@ -5564,7 +5572,7 @@
 		// window.addEventListener('click', handleClickOutsideModal);
 
 
-		
+
 
 
 
